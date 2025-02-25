@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <h1>Music Player</h1>
+        <audio id="audio" controls>
+            <!-- This source will be updated dynamically using JavaScript -->
+            <source id="audioSource" src="music/01-elloMaleyaagidhe.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <div class="controls">
+            <button id="prevBtn">&#9664; Prev</button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">Next &#9654;</button>
+        </div>
+
+        <div class="track-info">
+            <p id="trackTitle">Track Title</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
